@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SynergySphere - Login</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row justify-content-center align-items-center vh-100">
+      <div class="col-md-6 col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title text-center mb-4">SynergySphere</h2>
+            <form id="login-form">
+              <div class="mb-3">
+                <label for="login-email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="login-email" required autocomplete="off">
+              </div>
+              <div class="mb-3">
+                <label for="login-password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="login-password" required autocomplete="new-password">
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Login</button>
+              <p class="text-center mt-3">
+                <a href="#" id="forgot-password-link">Forgot Password?</a>
+              </p>
+            </form>
+            <form id="signup-form" class="d-none">
+              <div class="mb-3">
+                <label for="signup-name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="signup-name" required autocomplete="off">
+              </div>
+              <div class="mb-3">
+                <label for="signup-email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="signup-email" required autocomplete="off">
+              </div>
+              <div class="mb-3">
+                <label for="signup-password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="signup-password" required autocomplete="new-password">
+              </div>
+              <button type="submit" class="btn btn-success w-100">Sign Up</button>
+            </form>
+            <p class="text-center mt-3">
+              Don't have an account? <a href="#" id="signup-link">Sign Up</a>
+            </p>
+             <p class="text-center mt-3 d-none" id="login-link-container">
+              Already have an account? <a href="#" id="login-link">Login</a>
+            </p>
+            <form id="forgot-password-form" class="d-none">
+              <div class="mb-3">
+                <label for="forgot-email" class="form-label">Enter your email address</label>
+                <input type="email" class="form-control" id="forgot-email" required autocomplete="off">
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Send Reset Link</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
